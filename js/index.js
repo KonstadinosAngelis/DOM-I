@@ -54,7 +54,19 @@ navBar[5].textContent = siteContent.nav["nav-item-6"];
 //header
 
 const mainText = document.querySelector('h1');
-mainText.textContent = siteContent.cta["h1"];
+mainText.textContent = "DOM";
+
+let lineBreak = document.createElement("br");
+mainText.appendChild(lineBreak);
+
+const isText = document.createTextNode("Is");
+mainText.appendChild(isText);
+
+lineBreak = document.createElement("br");
+mainText.appendChild(lineBreak);
+
+const isAwesomeText = document.createTextNode("Awesome");
+mainText.appendChild(isAwesomeText);
 
 const getStartedButton = document.querySelector('button');
 getStartedButton.textContent = siteContent.cta["button"];
@@ -67,22 +79,30 @@ mainLogo.src = siteContent.cta["img-src"];
 const textContentHeaders = document.querySelectorAll('h4');
 const textContentParagraphs = document.querySelectorAll('p');
 
-textContentHeaders[0].textContent = siteContent["main-content"]["features-h4"]
-textContentParagraphs[0].textContent = siteContent["main-content"]["features-content"]
+textContentHeaders[0].textContent = siteContent["main-content"]["features-h4"];
+textContentParagraphs[0].textContent = siteContent["main-content"]["features-content"];
 
-textContentHeaders[1].textContent = siteContent["main-content"]["about-h4"]
-textContentParagraphs[1].textContent = siteContent["main-content"]["about-content"]
+textContentHeaders[1].textContent = siteContent["main-content"]["about-h4"];
+textContentParagraphs[1].textContent = siteContent["main-content"]["about-content"];
 
-const middleCodeImage = document.querySelector('.middle-img')
-middleCodeImage.src = siteContent["main-content"]["middle-img-src"]
+const middleCodeImage = document.querySelector('.middle-img');
+middleCodeImage.src = siteContent["main-content"]["middle-img-src"];
 
-textContentHeaders[2].textContent = siteContent["main-content"]["services-h4"]
-textContentParagraphs[2].textContent = siteContent["main-content"]["services-content"]
+textContentHeaders[2].textContent = siteContent["main-content"]["services-h4"];
+textContentParagraphs[2].textContent = siteContent["main-content"]["services-content"];
 
-textContentHeaders[3].textContent = siteContent["main-content"]["product-h4"]
-textContentParagraphs[3].textContent = siteContent["main-content"]["product-content"]
+textContentHeaders[3].textContent = siteContent["main-content"]["product-h4"];
+textContentParagraphs[3].textContent = siteContent["main-content"]["product-content"];
 
-textContentHeaders[4].textContent = siteContent["main-content"]["vision-h4"]
-textContentParagraphs[4].textContent = siteContent["main-content"]["vision-content"]
+textContentHeaders[4].textContent = siteContent["main-content"]["vision-h4"];
+textContentParagraphs[4].textContent = siteContent["main-content"]["vision-content"];
+
+//contact
+
+textContentHeaders[5].textContent = siteContent["contact"]["contact-h4"];
+textContentParagraphs[5].textContent = siteContent["contact"]["address"];
+textContentParagraphs[6].textContent = siteContent["contact"]["phone"];
+textContentParagraphs[7].textContent = siteContent["contact"]["email"];
 
 //footer
+textContentParagraphs[8].textContent = siteContent["footer"]["copyright"];

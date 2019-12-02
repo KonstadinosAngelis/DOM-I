@@ -38,6 +38,8 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+//nav
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
@@ -49,5 +51,38 @@ navBar[3].textContent = siteContent.nav["nav-item-4"];
 navBar[4].textContent = siteContent.nav["nav-item-5"];
 navBar[5].textContent = siteContent.nav["nav-item-6"];
 
+//header
 
+const mainText = document.querySelector('h1');
+mainText.textContent = siteContent.cta["h1"];
 
+const getStartedButton = document.querySelector('button');
+getStartedButton.textContent = siteContent.cta["button"];
+
+const mainLogo = document.querySelector('#cta-img');
+mainLogo.src = siteContent.cta["img-src"];
+
+//main body
+
+const textContentHeaders = document.querySelectorAll('h4');
+const textContentParagraphs = document.querySelectorAll('p');
+
+textContentHeaders[0].textContent = siteContent["main-content"]["features-h4"]
+textContentParagraphs[0].textContent = siteContent["main-content"]["features-content"]
+
+textContentHeaders[1].textContent = siteContent["main-content"]["about-h4"]
+textContentParagraphs[1].textContent = siteContent["main-content"]["about-content"]
+
+const middleCodeImage = document.querySelector('.middle-img')
+middleCodeImage.src = siteContent["main-content"]["middle-img-src"]
+
+textContentHeaders[2].textContent = siteContent["main-content"]["services-h4"]
+textContentParagraphs[2].textContent = siteContent["main-content"]["services-content"]
+
+textContentHeaders[3].textContent = siteContent["main-content"]["product-h4"]
+textContentParagraphs[3].textContent = siteContent["main-content"]["product-content"]
+
+textContentHeaders[4].textContent = siteContent["main-content"]["vision-h4"]
+textContentParagraphs[4].textContent = siteContent["main-content"]["vision-content"]
+
+//footer
